@@ -1,0 +1,44 @@
+body {
+	font-family: Arial, sans-serif;
+    	background-color: #f4f4f4;
+    	margin: 0;
+    	padding: 0;
+}
+
+#headersection {
+	background-color: #d9534f;
+    color: #fff;
+    padding: 20px;
+
+}
+#bodysection {
+    padding: 20px;
+}
+#headersection.h1,h3{
+	font-family: Cursive;
+margin: 0;
+            font-weight: bold;
+     
+}
+
+input { 
+	padding: 10px;
+	border-radius: 5px;
+ }
+#dropbox{
+	padding: 10px;
+	border-radius: 5px;
+	width:10%;
+	border-color: grey;
+}
+#loginbtn{
+	background-color: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#loginbtn:hover {
+    background-color: #c9302c;
+}

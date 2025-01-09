@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<style>
+    body {
+            background-image: url('../blood.png'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+form {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+select,
+button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="file"] {
+    margin-top: 10px;
+}
+
+button {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+ h1 {
+            font-size: 48px;
+            color: #800000; /* Dark red */
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+  h3 {
+            font-size: 24px;
+            color: #333; /* Dark grey */
+            letter-spacing: 1px;
+}
+</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Blood Bank</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<center>
+	<div id="headersection">
+ 	<img style="width:120px; height:120px; padding:15px;" src="../bb.jpg" alt="BloodBond Logo">
+	<h1> BloodBond</h1>
+	<h3> Blood Bank System </h3>
+    <hr>
+    <marquee behavior="scroll" direction="left" style="color:darkred;">
+        Share Life: Be a Hero, Donate Blood - Save Lives: Be a Blood Donor Today!
+    </marquee>
+    <hr>
+</div>
+	
+	<div id="bodysection">
+	<h3 style="color:darkred;"> Register here! </h3>
+	<form action="../api/register.php" method="post" enctype="multipart/form-data">
+		<input type="text" name="name" placeholder="Enter name"><br><br>
+		<input type="number" name="phone" placeholder="Enter mobile no"><br><br>
+		<input type="password" name="password" placeholder="Enter password"><br><br>
+		<input type="password" name="cpassword" placeholder="Confirm password"><br><br>
+		<input type="text" name="address" placeholder="Enter address"><br><br>
+		Upload Photo:<input type="file" name="photo" id="photo"><br><br>
+		Select participant: <select name="role">
+			<option value="1"> Recipient</option>
+			<option value="2"> Donor</option>
+		</select><br><br>
+		<button>Register</button><br><br>
+		Already participant? <a href="../index.html"> Login here </a></form> </div>
+</center>
+</body>
+</html>
+   

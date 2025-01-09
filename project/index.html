@@ -1,0 +1,76 @@
+
+<html>
+    <head>
+        <title>Blood Bank</title>
+<style>
+    body {
+            background-image: url('blood.png'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+form {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="number"],
+input[type="password"]{
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  h1 {
+            font-size: 48px;
+            color: #800000; /* Dark red */
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+  h3 {
+            font-size: 24px;
+            color: #333; /* Dark grey */
+            letter-spacing: 1px;
+}
+
+</style>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body><div id="headersection"><center>
+	<img style="width:120px; height:120px; padding:15px;" src="bb.jpg" alt="BloodBond Logo">
+        
+        <h1 style="text-align:center;"> BloodBond</h1>
+	<h3 "text-align:center;"> Blood Bank System </h3>
+    <hr>
+	<marquee behavior="scroll" direction="left" style="color:darkred;">
+    Share Life: Be a Hero, Donate Blood - Save Lives: Be a Blood Donor Today!
+</marquee>
+<hr>    
+    </div>
+    
+    <div id="bodysection">
+        <form action="api/login.php" method="POST">
+            <h2> LOGIN</h2>
+            <input type="number" name="phone" placeholder="Enter phone number"><br><br>
+            <input type="password" name="password" placeholder="Enter password"><br><br>
+        <label for="dropbox" style="color:darkred;">Select Participant Type:</label>    
+	<select id="dropbox" name="role"> 
+                <option value="1"> Recipient </option>
+                <option value="2"> Donar </option>
+            </select ><br><br>
+            <button id="loginbtn"> Login </button><br> <br>
+            
+            New participant? <a href="route\register.html"> Register here</a>
+
+
+        </form>
+        </div>
+</center>
+    </body>
+
+</html>
